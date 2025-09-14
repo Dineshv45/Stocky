@@ -10,7 +10,7 @@ export default function RewardForm({ userId, onRewardAdded }) {
     await addReward({ userId, stock, shares: parseFloat(shares) });
     setStock("");
     setShares("");
-    onRewardAdded(); // refresh data
+    onRewardAdded(); 
   };
 
   return (

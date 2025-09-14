@@ -20,9 +20,9 @@ export async function updateStockPrices() {
         { upsert: true, new: true }
       );
     }
-    console.log("✅ Stock prices updated");
+    console.log(" Stock prices updated");
   } catch (err) {
-    console.error("❌ Error updating stock prices:", err);
+    console.error(" Error updating stock prices:", err);
   }
 }
 

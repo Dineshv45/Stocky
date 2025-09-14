@@ -8,7 +8,7 @@ export default function Portfolio({ userId, refresh }) {
     if (userId) {
       getHistoricalInr(userId).then(res => setHistory(res.data));
     }
-  }, [userId, refresh]); // ✅ refresh comes from props
+  }, [userId, refresh]);
 
   return (
     <div className="card">
